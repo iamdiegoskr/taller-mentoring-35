@@ -1,6 +1,11 @@
 //reducers
 import { combineReducers } from "redux";
 
+const VIEWLOADING = "view-loading";
+const VIEWLOADED = "view-loaded";
+const RANDOMRESULT = "random-result"
+
+
 function view(
   state = {
     loading: false,
@@ -9,12 +14,12 @@ function view(
 ) {
   switch (action.type) {
     //TODO: refactorizar
-    case "view-loading": {
+    case VIEWLOADING : {
       return {
         loading: true,
       };
     }
-    case "view-loaded": {
+    case VIEWLOADED: {
       return {
         loading: false,
       };
@@ -31,7 +36,7 @@ function random(
   action
 ) {
   switch (action.type) {
-    case "random-result": {
+    case RANDOMRESULT: {
       return { result: action.data };
     }
     default:
