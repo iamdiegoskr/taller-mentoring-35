@@ -1,0 +1,17 @@
+.message-input{
+    font-size: 1em;
+    margin-right: 18px;
+}
+
+.form input{
+    margin-bottom: 20px;
+}
+
+.btn-form{
+    background: #ac37ff;
+    color: white;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 7px;
+    margin-bottom: 12px;
+}
